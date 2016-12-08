@@ -1,0 +1,34 @@
+{
+  "name": "sunflower",
+  "version": "1.0.0",
+  "description": "Learn something",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CLPing/sunflower.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack",
+    "eslint",
+    "bable",
+    "scss"
+  ],
+  "author": "clp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CLPing/sunflower/issues"
+  },
+  "homepage": "https://github.com/CLPing/sunflower#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  }
+}
