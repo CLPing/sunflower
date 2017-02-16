@@ -2,6 +2,7 @@ var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
 var config = require('./webpack.config.js');
 
+config.entry.app.unshift("webpack-dev-server/client?http://localhost:8080/", "webpack/hot/dev-server");
 var compiler = webpack(config);
 var server = new webpackDevServer(compiler, {
 	historyApiFallback: true,
@@ -12,11 +13,9 @@ var server = new webpackDevServer(compiler, {
 	stats: { colors: true }
 });
 
-config.entry.unshift("webpack-dev-server/client?http://localhost:6000/", "webpack/hot/dev-server");
-
-server.listen(6000, "localhost", function(err) {
+server.listen(8080, "localhost", function(err) {
 	if(err) {
 		console.log(err);
 	}
-	console.log('Listening at localhost:6000...');
+	console.log('Listening at localhost:8080...');
 });
